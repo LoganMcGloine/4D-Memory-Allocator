@@ -423,9 +423,7 @@ int main() {
         add_breadth_first(head, strdup(buffer));    // Make a copy of the string
     }
 
-    // Print the structure to verify
-    // printf("\nPrinting breadth-first:\n");
-    // print_list_breadth_first(head);
+  
 
 
     printf("\nPrinting depth-first:\n");
