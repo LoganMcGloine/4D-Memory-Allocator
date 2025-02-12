@@ -140,7 +140,7 @@ void add_node_bottom(struct memory_block* head, char* data) {
     add_node(current, data, 3);
 }
 
-struct memory_block* find_node_dfs(struct memory_block* head, char* data) {
+struct memory_block* find_node_breadth_first(struct memory_block* head, char* data) {
     //a depth first search approach to searching for a node in a linked list
 
     //check if the list is empty
@@ -427,8 +427,11 @@ int main() {
     // printf("\nPrinting breadth-first:\n");
     // print_list_breadth_first(head);
 
+
     printf("\nPrinting depth-first:\n");
     print_list_depth_first(head);
+   
+    visualize_structure(head);
 
     free_list(head);
     return 0;
